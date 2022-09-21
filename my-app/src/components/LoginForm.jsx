@@ -1,17 +1,11 @@
 import TextField from "./TextField";
 import Button from "./Button";
+import Header from "./Header";
 export default function (props) {
   return (
     <div className="w-50 mt-5 mx-auto">
       {/* <form className="w-50 mt-5 mx-auto"> */}
-        <img
-          className="mb-4"
-          src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg"
-          alt=""
-          width="72"
-          height="57"
-        />
-        <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+        <Header {...{text:"Please Sign In"}}/>
         <TextField
           {...{
             type: "email",

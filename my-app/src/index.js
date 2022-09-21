@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios'
 
 export const instance = axios.create({
-  baseURL:"http://localhost:8080"
+  baseURL:"http://localhost:8080",
 })
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
